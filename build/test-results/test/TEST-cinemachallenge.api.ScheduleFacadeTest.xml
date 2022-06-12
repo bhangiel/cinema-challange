@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="cinemachallenge.api.ScheduleFacadeTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-06-12T22:29:02" hostname="macbook-pro-bolesaw.home" time="0.048">
+  <properties/>
+  <testcase name="should_return_scheduled_result()" classname="cinemachallenge.api.ScheduleFacadeTest" time="0.048"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
