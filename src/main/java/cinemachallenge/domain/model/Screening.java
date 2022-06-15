@@ -18,6 +18,31 @@ public class Screening {
         this.room = room;
         this.startingTime = startingTime;
         this.endingTime = startingTime.plus(movie.getRunningTime());
+        this.day = day;
+    }
+
+    public Movie movie() {
+        return movie;
+    }
+
+    public DayOfWeek day() {
+        return this.day;
+    }
+
+    public LocalTime startingTime() {
+        return this.startingTime;
+    }
+
+    public LocalTime endingTime() {
+        return this.endingTime;
+    }
+
+    public LocalTime roomAvailableTime() {
+        return this.endingTime.plus(room.cleaningTime());
+    }
+
+    public Room room() {
+        return room;
     }
 
     @Override
@@ -31,25 +56,5 @@ public class Screening {
     @Override
     public int hashCode() {
         return Objects.hash(movie, day, startingTime, endingTime, room);
-    }
-
-    public Movie movie() {
-        return movie;
-    }
-
-    public DayOfWeek day() {
-        return day;
-    }
-
-    public LocalTime startingTime() {
-        return startingTime;
-    }
-
-    public LocalTime endingTime() {
-        return endingTime;
-    }
-
-    public Room room() {
-        return room;
     }
 }
